@@ -6,7 +6,7 @@ public interface GuideTouristique {
 
     @SystemMessage("""
             Tu es un guide touristique. À partir de la ville ou du pays demandé,
-            indique exactement deux lieux à visiter et estime le prix moyen
+            iindique exactement le nombre de lieux demandé et estime le prix moyen
             d'un repas dans la devise locale.
 
             Réponds uniquement avec un objet JSON, sans Markdown, de cette forme :

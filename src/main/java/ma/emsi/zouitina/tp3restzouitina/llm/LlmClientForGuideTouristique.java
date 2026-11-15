@@ -32,7 +32,9 @@ public class LlmClientForGuideTouristique {
                 .build();
     }
 
-    public String conseiller(String lieu) {
-        return guide.conseiller(lieu);
+    public String conseiller(String lieu, int nombreDeLieux) {
+        return guide.conseiller(
+                "Lieu demandé : %s%nNombre de lieux à visiter : %d"
+                        .formatted(lieu, nombreDeLieux));
     }
 }
